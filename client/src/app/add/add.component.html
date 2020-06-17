@@ -1,0 +1,67 @@
+<div>
+    <h1 style="width: 100%;
+    font-size: 40px;
+    font-family: 'MuseoModerno', cursive;
+    margin-left: 55px;"
+    >Add Employee</h1>
+
+    <form novalidate #employeeForm = "ngForm" (ngSubmit)="onSubmit(employeeForm)">
+        <mat-form-field > 
+            <!-- <mat-label>First Name</mat-label> -->
+            <input matInput placeholder="First Name" type="text" name="first_name" [(ngModel)]="employee.first_name" #first_name = "ngModel" required>
+            <mat-error *ngIf="first_name.errors?.required">First Name is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name" type="text" name="last_name" [(ngModel)]="employee.last_name" #last_name = "ngModel" required>
+            <mat-error *ngIf="last_name.errors?.required">Last Name is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Date of Birth</mat-label>
+            <input matInput placeholder="Date of birth" type="date" name="dob" [(ngModel)]="employee.dob" #dob = "ngModel" required>
+            <mat-error *ngIf="dob.errors?.required">DOB is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Gender</mat-label>
+            <input matInput placeholder="Gender" type="text" name="gender" [(ngModel)]="employee.gender" #gender = "ngModel" required>
+            <mat-error *ngIf="gender.errors?.required">Employee gender is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Department</mat-label>
+            <mat-error *ngIf="department.errors?.required">Employee department is Required</mat-error>
+            <input matInput placeholder="Department" type="text" name="department" [(ngModel)]="employee.department" #department = "ngModel" required>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Position</mat-label>
+            <input matInput placeholder="Position" type="text" name="position" [(ngModel)]="employee.position" #position = "ngModel" required>
+            <mat-error *ngIf="position.errors?.required">Employee position is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <input matInput placeholder="Employee ID" type="number" name="emp_id" [(ngModel)]="employee.emp_id" #emp_id = "ngModel" required>
+            <mat-error *ngIf="emp_id.errors?.required">Employee ID is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Salary</mat-label>
+            <input matInput placeholder="Salary" type="number" name="salary" [(ngModel)]="employee.salary" #salary = "ngModel" required>
+            <mat-error *ngIf="salary.errors?.required">Employee salary is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Phone</mat-label>
+            <input matInput placeholder="Phone" type="number" name="phone" [(ngModel)]="employee.phone" #phone = "ngModel" required pattern="[0-9]{10}">
+            <mat-error *ngIf="phone.errors?.required">Phone number is is Required</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" type="email" name="email" [(ngModel)]="employee.email" #email = "ngModel"  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+            <mat-error *ngIf="email.errors?.pattern">Incorrect  Email</mat-error>
+        </mat-form-field>
+        <mat-form-field > 
+            <mat-label>Address</mat-label>
+            <input matInput placeholder="Address" type="text" name="address" [(ngModel)]="employee.address" #address = "ngModel" >
+        </mat-form-field>
+        <button  mat-raised-button color="primary" [disabled]="employeeForm.form.invalid">Add employee</button>
+
+    </form>
+
+
+</div>

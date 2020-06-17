@@ -1,0 +1,41 @@
+.add-header{
+    width: 100%;
+}
+
+mat-form-field{
+    font-size: 20px !important;
+    width: 600px !important;
+    margin: 30px !important;
+    padding: 5px 30px 5px 30px;
+}
+.dept-details{
+    font-size: 20px !important;
+    width: 250px !important;
+    margin: 30px 8px 30px 30px !important;
+    padding: 5px 30px 5px 30px;
+}
+button{
+    margin: 0px 100px 20px 100px;
+}
+@media screen and (min-width: 720px){
+    mat-form-field{
+        width: 330px;
+        margin: 20px;
+    }
+    .dept-details{
+        width: 330px;
+        margin: 20px;
+}
+}
+@media screen and (max-width: 720px){
+    mat-form-field{
+        width: 380px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    mat-form-field{
+        width: 300px !important;
+        padding: 2px;
+        margin: 5px;
+    }
+}

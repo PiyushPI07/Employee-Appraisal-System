@@ -1,0 +1,39 @@
+.example-container {
+    margin-top: 63px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+
+}
+.sidenav{
+    
+    width:200px;
+    background-color: lighten($color: #673ab7, $amount: 20) !important;
+
+}
+.sidenav-collapsed{
+    
+    width:75px;
+    background-color: lighten($color: #673ab7, $amount: 20) !important;
+
+}
+
+.nav-div{
+    margin: 30px 0px 0px 0px;
+    padding: 5px 15px 5px 5px;
+}
+.large-button-div{
+    margin: 10px;
+}
+button{
+    width: 100%
+}
+button-div{
+    margin: 10px !important;
+}
+.icon{
+    margin: 5px 5px 5px 5px;
+}

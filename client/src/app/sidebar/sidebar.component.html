@@ -1,0 +1,33 @@
+<mat-sidenav-container class="example-container" (window:resize)="onResize($event)" >
+    <mat-sidenav mode="side" class="sidenav-collapsed" color="primery" opened *ngIf="shrink" >
+        <div class="nav-div">
+            <div class="button-div">
+                <button mat-fab routerLink="/home" class="icon" color="primary" aria-label="Example icon button with a home icon">
+                    <mat-icon>home</mat-icon>
+                </button>
+            </div>
+            <div class="button-div">
+                <button mat-fab routerLink="/add" class="icon" color="primary" aria-label="Example icon button with a add icon">
+                    <mat-icon>add</mat-icon>
+                </button>
+            </div>
+        </div>
+    </mat-sidenav>
+    <mat-sidenav mode="side" class="sidenav" color="primery" opened *ngIf="!shrink">
+        <h3 style="padding: 5px 20px 0px 20px; font-size: 25px;font-family: 'Roboto', sans-serif;"> Welcome Admin</h3>
+        <div class="nav-div" *ngIf="!shrink">
+            <div class="large-button-div" >
+                <button routerLink="/home" color="primary" mat-flat-button>Home</button>
+            </div>
+            <div class="large-button-div">
+                <button routerLink="/add" color="primary" mat-flat-button>Add Employee</button>
+            </div>
+        </div>
+
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>

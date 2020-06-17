@@ -1,0 +1,117 @@
+.home{
+    padding: 10px 75px 10px 75px;
+}
+mat-form-field{
+    font-size: 15px !important;
+    width: 400px !important;
+    margin: 15px !important;
+    padding: 5px 30px 5px 30px;
+}
+mat-form-field-flex{
+    width: 950px !important;
+}
+.dept-details{
+    font-size: 20px !important;
+    width: 250px !important;
+    margin: 30px 8px 30px 30px !important;
+    padding: 5px 30px 5px 30px;
+}
+.employee-row{
+    height: 80px;
+    // padding: 10px 50px 10px 50px;
+    justify-content: space-between;;
+}
+.name-info{
+    height: 70px;
+    font-size: 30px;
+    width: 100% !important;
+    border-bottom: ridge;
+}
+.name-info-list{
+    width: 100%;
+    padding-top: 10px;
+}
+.buttons-div{
+    height: 65px;
+    align-self: flex-end;
+    width: 400px !important;
+    // margin: 20px 50px 20px 500px
+}
+.buttons{
+    margin: 10px 20px 10px 20px;
+}
+.form{
+    border-bottom: ridge;
+    box-shadow: darken($color: #000000, $amount: 5);
+}
+// @media screen and (min-width: 790px){
+//     mat-form-field{
+//     font-size: 8px !important;
+//     width: 300px !important;
+//     margin: 15px !important;
+//     padding: 5px 30px 5px 30px;
+// }
+// mat-form-field-flex{
+//     width: 7000px !important;
+// }
+
+//     .dept-details{
+//         width: 330px;
+//         margin: 20px;
+// }
+//     .home{
+//     padding: 5px;
+// }
+// }
+@media screen and (max-width: 780px){
+    mat-form-field{
+    font-size: 15px !important;
+    width: 400px !important;
+    margin: 15px !important;
+    padding: 5px 30px 5px 30px;
+}
+    .name-info[_ngcontent-lvi-c110]{
+        font-size: 25px !important;
+    }
+    .dept-details{
+        width: 330px;
+        margin: 20px;
+    }
+    .employee-row{
+    height: 50px;
+    // padding: 10px 50px 10px 50px;
+    justify-content: space-between;;
+    }
+    .name-info{
+        height: 70px;
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 20px !important;
+        width: 100% !important;
+        border-bottom: ridge;
+    }
+    .name-info-list{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .buttons-div{
+        height: 55px;
+        align-self: flex-end;
+        width: 300px !important;
+        // margin: 20px 50px 20px 500px
+    }
+    .buttons{
+        margin: 5px ;
+        width: 50px;
+        padding: 2px;
+    }
+    .form{
+        border-bottom: ridge;
+        box-shadow: darken($color: #000000, $amount: 5);
+    }
+    .home{
+    padding: 5px;
+}
+
+}
+
